@@ -2,7 +2,7 @@
 
 namespace Tests;
 
-use Lukeraymonddowning\SelfHealingUrls\Providers\SelfHealingUrlsServiceProvider;
+use Levintoo\SelfHealingUrls\Providers\SelfHealingUrlsServiceProvider;
 use Orchestra\Testbench\TestCase as BaseTestCase;
 
 abstract class TestCase extends BaseTestCase
@@ -11,7 +11,7 @@ abstract class TestCase extends BaseTestCase
     {
         parent::setUp();
 
-        $this->loadMigrationsFrom(__DIR__.'/fixtures/migrations');
+        $this->loadMigrationsFrom(__DIR__.'/Fixtures/migrations');;
     }
 
     protected function defineEnvironment($app): void

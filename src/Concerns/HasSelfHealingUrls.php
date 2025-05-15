@@ -1,10 +1,10 @@
 <?php
 
-namespace Lukeraymonddowning\SelfHealingUrls\Concerns;
+namespace Levintoo\SelfHealingUrls\Concerns;
 
-use Lukeraymonddowning\SelfHealingUrls\Contracts\IdentifierHandler;
-use Lukeraymonddowning\SelfHealingUrls\Contracts\Rerouter;
-use Lukeraymonddowning\SelfHealingUrls\Contracts\SlugSanitizer;
+use Levintoo\SelfHealingUrls\Contracts\IdentifierHandler;
+use Levintoo\SelfHealingUrls\Contracts\Rerouter;
+use Levintoo\SelfHealingUrls\Contracts\SlugSanitizer;
 
 trait HasSelfHealingUrls
 {

@@ -1,15 +1,15 @@
 <?php
 
-namespace Lukeraymonddowning\SelfHealingUrls\Providers;
+namespace Levintoo\SelfHealingUrls\Providers;
 
 use Illuminate\Contracts\Support\DeferrableProvider;
 use Illuminate\Support\ServiceProvider;
-use Lukeraymonddowning\SelfHealingUrls\Contracts\IdentifierHandler;
-use Lukeraymonddowning\SelfHealingUrls\Contracts\Rerouter;
-use Lukeraymonddowning\SelfHealingUrls\Contracts\SlugSanitizer;
-use Lukeraymonddowning\SelfHealingUrls\IdentifierHandlers\HyphenIdentifierHandler;
-use Lukeraymonddowning\SelfHealingUrls\Rerouters\NamedRouteRerouter;
-use Lukeraymonddowning\SelfHealingUrls\SlugSanitizers\StringHelperSlugSanitizer;
+use Levintoo\SelfHealingUrls\Contracts\IdentifierHandler;
+use Levintoo\SelfHealingUrls\Contracts\Rerouter;
+use Levintoo\SelfHealingUrls\Contracts\SlugSanitizer;
+use Levintoo\SelfHealingUrls\IdentifierHandlers\HyphenIdentifierHandler;
+use Levintoo\SelfHealingUrls\Rerouters\NamedRouteRerouter;
+use Levintoo\SelfHealingUrls\SlugSanitizers\StringHelperSlugSanitizer;
 
 class SelfHealingUrlsServiceProvider extends ServiceProvider
 {

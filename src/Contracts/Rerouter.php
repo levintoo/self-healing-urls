@@ -1,6 +1,6 @@
 <?php
 
-namespace Lukeraymonddowning\SelfHealingUrls\Contracts;
+namespace Levintoo\SelfHealingUrls\Contracts;
 
 interface Rerouter
 {

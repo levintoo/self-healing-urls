@@ -1,5 +1,8 @@
 # Self Healing URLs
 
+> This package was originally written by [Luke Downing](https://github.com/lukeraymonddowning).
+
+
 Self Healing URLs is a simple Laravel package inspired by [this video from Aaron Francis](https://www.youtube.com/watch?v=a6lnfyES-LA&t=554s).
 
 It allows you to mark Eloquent models as self-healing so that the URLs generated for said
@@ -10,13 +13,13 @@ models can include an SEO friendly slug whilst not breaking should the slug alte
 The package can be installed via Composer:
 
 ```
-composer require lukeraymonddowning/self-healing-urls
+composer require levintoo/self-healing-urls
 ```
 
 Once installed, add the `HasSelfHealingUrls` trait to any Eloquent model:
 
 ```php
-use Lukeraymonddowning\SelfHealingUrls\Concerns\HasSelfHealingUrls;
+use Levintoo\SelfHealingUrls\Concerns\HasSelfHealingUrls;
 
 class Post extends Model
 {
@@ -28,7 +31,7 @@ If your model has a column named `slug`, you're all set. Otherwise, define
 a `$slug` property on your model to inform the package which column to use instead:
 
 ```php
-use Lukeraymonddowning\SelfHealingUrls\Concerns\HasSelfHealingUrls;
+use Levintoo\SelfHealingUrls\Concerns\HasSelfHealingUrls;
 
 class Post extends Model
 {

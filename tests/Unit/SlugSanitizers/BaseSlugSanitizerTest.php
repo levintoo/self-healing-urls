@@ -1,6 +1,6 @@
 <?php
 
-use Lukeraymonddowning\SelfHealingUrls\SlugSanitizers\BaseSlugSanitizer;
+use Levintoo\SelfHealingUrls\SlugSanitizers\BaseSlugSanitizer;
 
 it('makes the slug lowercase', function () {
     $sanitzer = new BaseSlugSanitizer();

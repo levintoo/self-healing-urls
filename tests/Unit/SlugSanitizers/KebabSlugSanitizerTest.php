@@ -1,6 +1,6 @@
 <?php
 
-use Lukeraymonddowning\SelfHealingUrls\SlugSanitizers\StringHelperSlugSanitizer;
+use Levintoo\SelfHealingUrls\SlugSanitizers\StringHelperSlugSanitizer;
 
 it('replaces spaces with hyphens', function () {
     $sanitizer = new StringHelperSlugSanitizer();

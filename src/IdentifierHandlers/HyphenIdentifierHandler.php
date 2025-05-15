@@ -1,9 +1,9 @@
 <?php
 
-namespace Lukeraymonddowning\SelfHealingUrls\IdentifierHandlers;
+namespace Levintoo\SelfHealingUrls\IdentifierHandlers;
 
 use Illuminate\Support\Str;
-use Lukeraymonddowning\SelfHealingUrls\Contracts\IdentifierHandler;
+use Levintoo\SelfHealingUrls\Contracts\IdentifierHandler;
 
 class HyphenIdentifierHandler implements IdentifierHandler
 {

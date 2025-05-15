@@ -1,8 +1,8 @@
 <?php
 
-namespace Lukeraymonddowning\SelfHealingUrls\SlugSanitizers;
+namespace Levintoo\SelfHealingUrls\SlugSanitizers;
 
-use Lukeraymonddowning\SelfHealingUrls\Contracts\SlugSanitizer;
+use Levintoo\SelfHealingUrls\Contracts\SlugSanitizer;
 
 class BaseSlugSanitizer implements SlugSanitizer
 {

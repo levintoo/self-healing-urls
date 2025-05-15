@@ -1,9 +1,9 @@
 <?php
 
-namespace Lukeraymonddowning\SelfHealingUrls\Rerouters;
+namespace Levintoo\SelfHealingUrls\Rerouters;
 
 use Illuminate\Http\Request;
-use Lukeraymonddowning\SelfHealingUrls\Contracts\Rerouter;
+use Levintoo\SelfHealingUrls\Contracts\Rerouter;
 
 class NamedRouteRerouter implements Rerouter
 {

@@ -1,28 +1,32 @@
 {
-    "name": "lukeraymonddowning/self-healing-urls",
+    "name": "levintoo/self-healing-urls",
+    "version": "1.0.0",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Lukeraymonddowning\\SelfHealingUrls\\": "src/"
+            "Levintoo\\SelfHealingUrls\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests/"
+            "Tests\\": "tests/",
+            "Workbench\\App\\": "workbench/app/",
+            "Workbench\\Database\\Factories\\": "workbench/database/factories/",
+            "Workbench\\Database\\Seeders\\": "workbench/database/seeders/"
         }
     },
     "authors": [
         {
-            "name": "lukeraymonddowning",
-            "email": "lukeraymonddowning@gmail.com"
+            "name": "levintoo",
+            "email": "levintoo@gmail.com"
         }
     ],
     "require": {
-        "php": "^8.1|^8.2",
-        "laravel/framework": "^10.0|^11.0"
+        "php": "^8.1|^8.2|^8.3|^8.4",
+        "laravel/framework": "^10.0|^11.0|^12.0"
     },
     "require-dev": {
-        "orchestra/testbench": "^8.15|^9.0",
+        "orchestra/testbench": "^9.0",
         "pestphp/pest": "^2.25",
         "laravel/pint": "^1.13"
     },
@@ -34,8 +38,29 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Lukeraymonddowning\\SelfHealingUrls\\Providers\\SelfHealingUrlsServiceProvider"
+                "Levintoo\\SelfHealingUrls\\Providers\\SelfHealingUrlsServiceProvider"
             ]
         }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "@clear",
+            "@prepare"
+        ],
+        "clear": "@php vendor/bin/testbench package:purge-skeleton --ansi",
+        "prepare": "@php vendor/bin/testbench package:discover --ansi",
+        "build": "@php vendor/bin/testbench workbench:build --ansi",
+        "serve": [
+            "Composer\\Config::disableProcessTimeout",
+            "@build",
+            "@php vendor/bin/testbench serve --ansi"
+        ],
+        "lint": [
+            "@php vendor/bin/pint --ansi"
+        ],
+        "test": [
+            "@clear",
+            "@php vendor/bin/pest"
+        ]
     }
 }
